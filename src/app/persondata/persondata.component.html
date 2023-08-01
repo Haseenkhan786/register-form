@@ -1,0 +1,21 @@
+
+
+  <button [routerLink]="['/register']">Back</button>
+
+<div *ngFor="let employee of employees" style="border: 1px solid black; padding: 10px;">
+  <p style="font-weight: bold;">Name: {{ employee.FullName }}</p>
+  <p style="font-style: italic;">Gender: {{ employee.Gender }}</p>
+  <p style="color: red;">Fromdate: {{ employee.From_date }}</p>
+  <p style="color: blue;">Todate: {{ employee.To_date }}</p>
+  <p style="font-size: 18px;">Phone: {{ employee.Phone }}</p>
+  <p style="text-align: center;">Resume: <a href="http://localhost:8080/{{ employee.Resume }} "  > Download</a> </p>
+  <p style="text-decoration: underline;">Email: {{ employee.Email }}</p>
+  
+  
+
+  <!-- <hr> -->
+</div>
+
+
+
+
